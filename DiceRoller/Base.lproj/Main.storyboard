@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,56 +18,102 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSx-JZ-W5J">
-                                <rect key="frame" x="192" y="443" width="74" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSx-JZ-W5J">
+                                <rect key="frame" x="199" y="433" width="74" height="36"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Roll d10"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PkE-sZ-mdk">
-                                <rect key="frame" x="59" y="443" width="63" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PkE-sZ-mdk">
+                                <rect key="frame" x="47" y="434" width="74" height="36"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Roll d8"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qK4-Ut-nfp">
-                                <rect key="frame" x="198" y="500" width="63" height="36"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <state key="normal" title="Roll d6"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTF-yw-O6W">
-                                <rect key="frame" x="59" y="500" width="63" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTF-yw-O6W">
+                                <rect key="frame" x="47" y="501" width="74" height="36"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Roll d4"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNl-sb-k0b">
-                                <rect key="frame" x="192" y="378" width="74" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNl-sb-k0b">
+                                <rect key="frame" x="199" y="366" width="74" height="36"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Roll d20"/>
+                                <connections>
+                                    <action selector="rolld20:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kzM-Hb-a1s"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7AH-RS-JaK">
-                                <rect key="frame" x="118" y="321" width="85" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7AH-RS-JaK">
+                                <rect key="frame" x="117" y="300" width="85" height="36"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Roll d100"/>
+                                <connections>
+                                    <action selector="rollD100:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r3k-4t-qY1"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CB7-mJ-EfO">
-                                <rect key="frame" x="53" y="378" width="74" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CB7-mJ-EfO">
+                                <rect key="frame" x="47" y="367" width="74" height="36"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Roll d12"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Role-Playing Game Dice Roller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4a9-vb-X2c">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Role-Playing Game Dice Roller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4a9-vb-X2c">
                                 <rect key="frame" x="44" y="42" width="232" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHQ-FG-8ft">
-                                <rect key="frame" x="110" y="156" width="101" height="71"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qK4-Ut-nfp">
+                                <rect key="frame" x="199" y="500" width="74" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Roll d6"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHQ-FG-8ft">
+                                <rect key="frame" x="110" y="113" width="101" height="71"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="60"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kSx-JZ-W5J" firstAttribute="top" secondItem="rNl-sb-k0b" secondAttribute="bottom" constant="31" id="0Me-X1-1bT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rNl-sb-k0b" secondAttribute="trailing" constant="31" id="44n-ab-M5I"/>
+                            <constraint firstItem="qK4-Ut-nfp" firstAttribute="top" secondItem="kSx-JZ-W5J" secondAttribute="bottom" constant="31" id="5O5-Is-1tp"/>
+                            <constraint firstItem="CB7-mJ-EfO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="31" id="6t2-Qx-3Cq"/>
+                            <constraint firstItem="7AH-RS-JaK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8hL-8U-fwm"/>
+                            <constraint firstItem="CB7-mJ-EfO" firstAttribute="top" secondItem="7AH-RS-JaK" secondAttribute="bottom" constant="31" id="Ax6-jD-8dR"/>
+                            <constraint firstItem="rNl-sb-k0b" firstAttribute="width" secondItem="CB7-mJ-EfO" secondAttribute="width" id="FiC-m6-Im6"/>
+                            <constraint firstItem="sTF-yw-O6W" firstAttribute="width" secondItem="CB7-mJ-EfO" secondAttribute="width" id="I5L-k4-us8"/>
+                            <constraint firstItem="CHQ-FG-8ft" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="INB-sj-96I"/>
+                            <constraint firstItem="PkE-sZ-mdk" firstAttribute="width" secondItem="CB7-mJ-EfO" secondAttribute="width" id="Ogu-dO-jpu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sTF-yw-O6W" secondAttribute="bottom" constant="31" id="Oik-RM-Go4"/>
+                            <constraint firstItem="sTF-yw-O6W" firstAttribute="top" secondItem="PkE-sZ-mdk" secondAttribute="bottom" constant="31" id="Olz-y4-qg8"/>
+                            <constraint firstItem="qK4-Ut-nfp" firstAttribute="width" secondItem="CB7-mJ-EfO" secondAttribute="width" id="PAc-rR-uZN"/>
+                            <constraint firstItem="4a9-vb-X2c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QvR-pK-k4L"/>
+                            <constraint firstItem="PkE-sZ-mdk" firstAttribute="height" secondItem="CB7-mJ-EfO" secondAttribute="height" id="RxC-2G-5jJ"/>
+                            <constraint firstItem="sTF-yw-O6W" firstAttribute="height" secondItem="CB7-mJ-EfO" secondAttribute="height" id="TJs-Mb-Xo1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qK4-Ut-nfp" secondAttribute="bottom" constant="32" id="XmG-To-CsT"/>
+                            <constraint firstItem="4a9-vb-X2c" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="bTs-yi-DQo"/>
+                            <constraint firstItem="kSx-JZ-W5J" firstAttribute="height" secondItem="CB7-mJ-EfO" secondAttribute="height" id="bwO-sX-b2Y"/>
+                            <constraint firstItem="qK4-Ut-nfp" firstAttribute="height" secondItem="CB7-mJ-EfO" secondAttribute="height" id="eWv-fE-oHm"/>
+                            <constraint firstItem="kSx-JZ-W5J" firstAttribute="width" secondItem="CB7-mJ-EfO" secondAttribute="width" id="fmX-Ur-nsc"/>
+                            <constraint firstItem="CHQ-FG-8ft" firstAttribute="top" secondItem="4a9-vb-X2c" secondAttribute="bottom" constant="50" id="huN-ys-fqS"/>
+                            <constraint firstItem="rNl-sb-k0b" firstAttribute="height" secondItem="CB7-mJ-EfO" secondAttribute="height" id="kfw-jI-WsL"/>
+                            <constraint firstItem="PkE-sZ-mdk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="31" id="nvC-43-b0Z"/>
+                            <constraint firstItem="PkE-sZ-mdk" firstAttribute="top" secondItem="CB7-mJ-EfO" secondAttribute="bottom" constant="31" id="pO7-Df-pnw"/>
+                            <constraint firstItem="sTF-yw-O6W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="31" id="puu-wX-F4y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qK4-Ut-nfp" secondAttribute="trailing" constant="31" id="u0I-Iw-Ocy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kSx-JZ-W5J" secondAttribute="trailing" constant="31" id="zJd-0W-JTP"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="d10" destination="kSx-JZ-W5J" id="6pV-N4-iy1"/>
+                        <outlet property="d100" destination="7AH-RS-JaK" id="xqn-c6-BSQ"/>
+                        <outlet property="d12" destination="CB7-mJ-EfO" id="Lax-XK-pO7"/>
+                        <outlet property="d20" destination="rNl-sb-k0b" id="NqG-6z-GhM"/>
+                        <outlet property="d4" destination="sTF-yw-O6W" id="vh1-SJ-DfH"/>
+                        <outlet property="d6" destination="qK4-Ut-nfp" id="wAW-zO-a9j"/>
+                        <outlet property="d8" destination="PkE-sZ-mdk" id="Gdc-PI-UOK"/>
+                        <outlet property="rollResult" destination="CHQ-FG-8ft" id="N6F-cf-cPc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
